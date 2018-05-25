@@ -1,0 +1,5 @@
+Compilation command:
+javac -sourcepath ./src -d out src/javase01/t01/main/Main.java
+
+Execution command:
+java -classpath ./out javase01.t01.main.Main
