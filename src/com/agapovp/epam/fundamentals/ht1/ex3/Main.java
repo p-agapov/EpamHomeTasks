@@ -1,9 +1,9 @@
 package com.agapovp.epam.fundamentals.ht1.ex3;
 
-import static java.lang.Math.tan;
-
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+
+import static java.lang.Math.tan;
 
 public class Main {
     public static void main(String[] args) {
