@@ -15,20 +15,21 @@ public class Main {
 
         try {
             epsilon = Double.parseDouble(bufferedReader.readLine());
+
+            double elementOfSequence;
+
+            while (true) {
+                elementOfSequence = 1d / pow((number + 1), 2);
+
+                System.out.println(String.format("%.30f", elementOfSequence));
+                if (elementOfSequence < epsilon) {
+                    System.out.println(String.format("Number: %d", number));
+                    break;
+                }
+                number++;
+            }
         } catch (IOException e) {
             e.printStackTrace();
-        }
-        double elementOfSequence;
-
-        while (true) {
-            elementOfSequence = 1d / pow((number + 1), 2) ;
-
-            System.out.println(String.format("%.30f", elementOfSequence));
-            if (elementOfSequence < epsilon) {
-                System.out.println(String.format("Number: %d", number));
-                break;
-            }
-            number++;
         }
     }
 }

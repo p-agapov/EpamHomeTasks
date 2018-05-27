@@ -25,15 +25,15 @@ public class Main {
             b = Double.parseDouble(inArgs[1]);
             h = Double.parseDouble(inArgs[2]);
 
+
+            for (double x = a; x < b; x += h) {
+
+                double fun = tan(2 * x) - 3;
+
+                System.out.println(String.format("%15.10f; %15.10f", x, fun));
+            }
         } catch (Exception e) {
             e.printStackTrace();
-        }
-
-        for (double x = a; x < b; x += h) {
-
-            double fun = tan(2 * x) - 3;
-
-            System.out.println(String.format("%15.10f; %15.10f", x, fun));
         }
     }
 }
